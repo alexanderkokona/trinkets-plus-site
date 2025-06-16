@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+ :root {
+ --primary-color: #52489c;
+ --secondary-color: #59c3c3;
+ --accent-color: #f45b69;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: Mooli, san-serif;
+ }
+
+header {
+    background-color: #52489c;
+}
+.main-title {
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    .menu.menu-visible {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-button {
+        display: none;
+    }
+}
+
+.foot {
+    background-color:#52489c;
+}
+.toes {
+    color: white;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+  }
+  a:link,
+  a:visited {
+    color: var(--accent-color);
+  }
+
+.hide {
+  display: none;
+}
+
+dialog {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog .image-modal {
+  border: none;
+  padding: 0;
+  background: transparent;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog .image-modal img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.close-viewer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* for global dynamics */
+  @media screen and (max-width: 700px) {
+    .products {
+      display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .products {
+      display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .products {
+      display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    }
