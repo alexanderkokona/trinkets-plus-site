@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Optional: dynamically build menu
     const navLinks = [
-        { text: "Home", href: "/main/1home/index.html" },
-        { text: "Shop", href: "#" },
-        { text: "About", href: "#" },
-        { text: "Contact", href: "#" }
+        { text: "Home", href: "home/index.html" },
+        { text: "Shop", href: "shop/index.html" },
+        { text: "About", href: "about/index.html" },
+        { text: "Contact", href: "contact/index.html" }
     ];
 
     const menuContainer = document.getElementById("menu");
